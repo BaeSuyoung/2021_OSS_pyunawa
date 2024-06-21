@@ -10,7 +10,8 @@
 
 -> 해당 제품이 없었을 떄 처리하기
 */
-var target = "milk1"; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
+var target = "8801117752804"; //바코드 스캔해서 알 수 있는 고유 제품 key 값 저장
+//서울)딸기우유300ml 에 대한 바코드 key 값: "8801115134213"
 
 var query1 = market1.where("prodID", "==", target);
 var query2 = market2.where("prodID", "==", target);
@@ -32,7 +33,7 @@ query1
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src= doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
 
@@ -60,7 +61,7 @@ query2
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });
@@ -84,7 +85,7 @@ query3
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });
@@ -107,7 +108,7 @@ query4
       type.innerHTML = doc.data().prodType;
       event.innerHTML = doc.data().prodEventType;
       img.innerHTML =
-        '<img src=doc.data().prodImg alt="No image" width="80", height="50"></img>';
+        '<img src=doc.data().prodImg alt="image" width="80", height="50"></img>';
       price.innerHTML =
         doc.data().prodPrice + '<span class="currency">원</span>';
     });
